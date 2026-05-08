@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MUSE 缪斯设计工作室</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- 导航 -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">M<span>USE</span></a>
+      <ul class="nav-links">
+        <li><a href="#hero">首页</a></li>
+        <li><a href="#about">关于</a></li>
+        <li><a href="#services">服务</a></li>
+        <li><a href="#portfolio">案例</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+      <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">免费咨询</button>
+      <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag">品牌 · 网站 · 数字化解决方案</p>
+      <h1>让您的品牌<br/><span class="gradient-text">被更多人看见</span></h1>
+      <p class="hero-desc">我们为每一个客户量身打造独特的数字体验，从品牌设计到网站开发，一站式解决您的线上展示需求。</p>
+      <div class="hero-btns">
+        <a href="#portfolio" class="btn btn-primary">查看案例</a>
+        <a href="#contact" class="btn btn-outline">联系我们</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>200+</strong><span>完成项目</span></div>
+        <div class="stat"><strong>98%</strong><span>客户满意度</span></div>
+        <div class="stat"><strong>5年</strong><span>行业经验</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="mockup">
+        <div class="mockup-bar"><span></span><span></span><span></span></div>
+        <div class="mockup-body">
+          <div class="mockup-line w80"></div>
+          <div class="mockup-line w60"></div>
+          <div class="mockup-block"></div>
+          <div class="mockup-line w70"></div>
+          <div class="mockup-line w40"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于 -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">关于我们</p>
+        <h2>为什么选择<span class="gradient-text">MUSE</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>MUSE 缪斯设计工作室成立于2021年，专注于为中小企业和创业团队提供高品质的品牌设计与网站开发服务。</p>
+          <p>我们相信，好的设计不只是好看，更要能帮客户实现商业目标。每一个项目，我们都全力以赴。</p>
+          <ul class="about-list">
+            <li>✓ 资深设计团队，平均5年以上行业经验</li>
+            <li>✓ 透明报价，无隐形消费</li>
+            <li>✓ 交付迅速，支持多次修改</li>
+            <li>✓ 长期维护，售后无忧</li>
+          </ul>
+        </div>
+        <div class="about-cards">
+          <div class="about-card">
+            <div class="card-icon">🎯</div>
+            <h3>目标导向</h3>
+            <p>设计服务于商业目标，不只是好看而已</p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">⚡</div>
+            <h3>快速交付</h3>
+            <p>标准官网7-14个工作日交付上线</p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">🔄</div>
+            <h3>持续迭代</h3>
+            <p>交付后持续跟进，免费维护3个月</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 服务 -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">我们的服务</p>
+        <h2>全方位<span class="gradient-text">数字解决方案</span></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🌐</div>
+          <h3>企业官网</h3>
+          <p>响应式企业官网设计与开发，PC/平板/手机完美适配，提升品牌形象。</p>
+          <div class="service-price">￥2,999 起</div>
+        </div>
+        <div class="service-card featured">
+          <div class="service-badge">热门</div>
+          <div class="service-icon">🛒</div>
+          <h3>电商网站</h3>
+          <p>全套电商解决方案，支持商品管理、支付对接、订单管理一体化。</p>
+          <div class="service-price">￥5,999 起</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3>品牌设计</h3>
+          <p>LOGO设计、VI视觉识别系统、品牌手册，打造独特品牌识别。</p>
+          <div class="service-price">￥1,999 起</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📱</div>
+          <h3>小程序开发</h3>
+          <p>微信/抖音/支付宝小程序定制开发，低成本触达更多用户。</p>
+          <div class="service-price">￥3,999 起</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>SEO优化</h3>
+          <p>搜索引擎优化，提升网站在百度的排名，获取更多精准流量。</p>
+          <div class="service-price">￥999/月</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔧</div>
+          <h3>网站维护</h3>
+          <p>定期备份、安全更新、内容修改，让您无后顾之忧。</p>
+          <div class="service-price">￥499/月</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 案例 -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">成功案例</p>
+        <h2>看看我们<span class="gradient-text">做过什么</span></h2>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="portfolio-thumb" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">企业官网</span>
+              <h3>蓝鲸科技</h3>
+              <p>AI解决方案提供商官网，极简科技风格</p>
+              <a href="#" class="portfolio-link">查看详情 →</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-thumb" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">电商品牌</span>
+              <h3>野森咖啡</h3>
+              <p>精品咖啡品牌官网 + 小程序商城</p>
+              <a href="#" class="portfolio-link">查看详情 →</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-thumb" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">教育机构</span>
+              <h3>启航教育</h3>
+              <p>在线教育平台，支持课程展示与报名</p>
+              <a href="#" class="portfolio-link">查看详情 →</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-thumb" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">餐饮品牌</span>
+              <h3>稻香料理</h3>
+              <p>日式料理餐厅官网，在线预订系统集成</p>
+              <a href="#" class="portfolio-link">查看详情 →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 流程 -->
+  <section class="process">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">合作流程</p>
+        <h2>简单<span class="gradient-text">四步上线</span></h2>
+      </div>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>需求沟通</h3>
+          <p>了解您的业务需求和设计偏好，提供初步方案和报价</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>设计确认</h3>
+          <p>提供首页设计稿，根据反馈修改至满意</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>开发上线</h3>
+          <p>前端切图+后端开发，测试无误后部署上线</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3>售后维护</h3>
+          <p>免费维护3个月，后续可提供长期维护服务</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">联系我们</p>
+        <h2>开启您的<span class="gradient-text">数字之旅</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-form-wrapper">
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('感谢您的留言！我们会尽快联系您。')">
+            <div class="form-group">
+              <label>您的姓名 *</label>
+              <input type="text" placeholder="请输入您的姓名" required />
+            </div>
+            <div class="form-group">
+              <label>联系电话 *</label>
+              <input type="tel" placeholder="请输入手机号码" required />
+            </div>
+            <div class="form-group">
+              <label>需求类型</label>
+              <select>
+                <option>企业官网</option>
+                <option>电商网站</option>
+                <option>品牌设计</option>
+                <option>小程序开发</option>
+                <option>其他需求</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>项目预算</label>
+              <select>
+                <option>￥3,000 以下</option>
+                <option>￥3,000 - ￥10,000</option>
+                <option>￥10,000 - ￥30,000</option>
+                <option>￥30,000 以上</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label>详细描述</label>
+              <textarea rows="4" placeholder="请描述您的项目需求..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">提交需求</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon">📞</div>
+            <h3>电话咨询</h3>
+            <p>138-0000-0000</p>
+            <span>工作日 9:00 - 18:00</span>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">📧</div>
+            <h3>邮件联系</h3>
+            <p>hello@musedesign.cn</p>
+            <span>24小时内回复</span>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <h3>办公地址</h3>
+            <p>杭州市西湖区文三路 XXX 号</p>
+            <span>欢迎预约面谈</span>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">💬</div>
+            <h3>微信咨询</h3>
+            <p>扫描二维码添加</p>
+            <div class="qrcode-placeholder">微信二维码</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>M<span>USE</span> 缪斯设计</h3>
+          <p>让每一个品牌都有自己的数字名片。</p>
+        </div>
+        <div class="footer-links">
+          <h4>快速链接</h4>
+          <a href="#about">关于我们</a>
+          <a href="#services">服务项目</a>
+          <a href="#portfolio">成功案例</a>
+          <a href="#contact">联系我们</a>
+        </div>
+        <div class="footer-links">
+          <h4>服务项目</h4>
+          <a href="#">企业官网</a>
+          <a href="#">电商开发</a>
+          <a href="#">品牌设计</a>
+          <a href="#">SEO优化</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MUSE 缪斯设计工作室 · 浙ICP备XXXXXXXX号</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 回到顶部 -->
+  <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script>
+    // 导航滚动效果
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+      document.getElementById('backToTop').classList.toggle('show', window.scrollY > 400);
+    });
+
+    // 数字动画
+    const animateCounters = () => {
+      document.querySelectorAll('.stat strong').forEach(el => {
+        const target = parseInt(el.textContent);
+        let current = 0;
+        const step = target / 40;
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) { current = target; clearInterval(timer); }
+          el.textContent = Math.floor(current) + (el.textContent.includes('+') ? '+' : el.textContent.includes('%') ? '%' : '');
+        }, 30);
+      });
+    };
+
+    // 滚动触发动画
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          if (entry.target.classList.contains('hero-stats')) animateCounters();
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.about-card, .service-card, .portfolio-item, .step, .info-card').forEach(el => observer.observe(el));
+    observer.observe(document.querySelector('.hero-stats'));
+  </script>
+</body>
+</html>
